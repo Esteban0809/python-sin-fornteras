@@ -1,0 +1,109 @@
+body {
+    background-color: #eee;
+  }
+  
+  .grid {
+    /***** DISPLAY *****/
+  
+    /* Disposición por columnas */
+    /* Todos los elementos que se encuentren dentro de la clase grid,
+    serán considerados una grilla */
+    display: grid;
+    /* El ancho de la etiqueta será el ancho de su contenido */
+    /* display: inline-grid; */
+  
+    /***** FILAS *****/
+  
+    /* Se debe indicar la altura por cada fila */
+    /* grid-template-rows: 50px 100px; */
+    /* grid-template-rows: repeat(2, 50px); */
+  
+    /* Asignando nombres a las filas */
+    /* grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 100px [row-3-fin]; */
+    /* Repeat con nombres */
+    grid-template-rows: repeat(2, [row-inicio] 50px [row-fin]);
+  
+    /***** COLUMNAS *****/
+  
+    /* La cantidad de columnas que se forma es en base a la cantidad de 
+    datos que pasemos */
+    /* grid-template-columns: 90px 50px 120px; */
+    /* También se pueden utilizar fracciones (en base al ancho del contenedor) */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    /* Otros valores para medir */
+    /* grid-template-columns: 2rem 20% 1fr 2fr; */
+  
+    /* minmax(min, max) */
+    /* grid-template-columns: minmax(auto, 50%) 1fr 2em; */
+  
+    /* Sirve para indicarle a la grilla la cantidad de veces que se quiere que se
+    repita un argumento en la propiedad indicada */
+    /* También se puede usar otros argumentos con el valor de repeat */
+    /* grid-template-columns: 30px repeat(3, 1fr) 15px; */
+    /* Asignando nombres a las columnas */
+    /* grid-template-columns: [col1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-fin]; */
+    /* Repeat con nombres */
+    grid-template-columns: repeat(3, [col-inicio] 1fr [col-fin]);
+  
+    /***** GAP *****/
+    /* Espacio entre los elementos */
+    /* grid-row-gap: 20px; */
+    /* grid-column-gap: 10px; */
+    /* Espaciado para ambos */
+    /* filas columnas */
+    /* grid-gap: 30px 30px; */
+    grid-gap: 15px;
+  }
+  
+  .element {
+    background-color: red;
+  }
+  
+  .header {
+    /* Estas propiedades se utilizan solo para un elemento de la grilla
+    y se deben especificar aparte */
+    /* grid-row-start: 1; */
+    /* grid-row-end: 3; */
+    /* grid-column-start: 1; */
+    /* grid-column-end: 6; */
+    /* Ambas en una */
+  
+    /* Afectar el espacio del header afectara el orden de las filas y columnas */
+    /* grid-row: 1 / 3; */
+    /* grid-column: 1 / 4; */
+    /* Espacio indicado por los nombres */
+    /* grid-row: row-1-inicio / row-3-fin;  */
+    /* grid-column: col1-inicio / col-4-fin; */
+    /* Espaciado indicado con nombres y repeat */
+    grid-row: row-inicio / row-fin 2;
+    grid-column: col-inicio / col-fin 3;
+  }
+  
+  /***** REPEAT CON NOMBRES *****/
+  /* Ejemplo filas */
+  /* grid-template-rows: repeat(2, [row-inicio] 50px [row-fin]); */
+  /*
+    -------------------------------------------------------
+    |                     row-inicio                      |
+    -------------------------------------------------------
+    -------------------------------------------------------
+    |               row-fin & row-inicio 2                |
+    -------------------------------------------------------
+    -------------------------------------------------------
+    |                      row-fin 2                      |
+    -------------------------------------------------------
+  */
+  /* Como se puede apreciar, se crea una fila con dos nombres  */
+  
+  /* Ejemplo columnas*/
+  /*   grid-template-columns: repeat(3, [col-inicio] 1fr [col-fin]) */
+  /*
+    -----------------------    -----------------------    -----------------------    -----------------------
+    |                     |    |                     |    |                     |    |                     |
+    |                     |    |       col-fin       |    |      col-fin 2      |    |      col-fin 3      |
+    |     col-inicio      |    |          &          |    |         &           |    |         &           |
+    |                     |    |     col-inicio 2    |    |     col-inicio 3    |    |    col-inicio 4     |
+    |                     |    |                     |    |                     |    |                     |
+    -----------------------    -----------------------    -----------------------    -----------------------
+  */
+  /* Como se puede apreciar, se crea una fila con dos nombres  */

@@ -1,0 +1,51 @@
+body {
+    background-color: #eee;
+  }
+  
+  #disp {
+    /* display: inline; */
+    /* Es responsivo */
+    max-width: 350px;
+    background-color: #fee;
+    margin: auto;
+    /* Deja el contenido fijo en la pantalla */
+    /* Usado para menús estáticos */
+    position: fixed;
+    /* position: relative; */
+    /* Propiedades para mover */
+    right: 15px;
+    top: 0px;
+    bottom: 0px;
+  }
+  
+  #over {
+    width: 100px;
+    height: 100px;
+    /* Overflow */
+    /* La propiedad de Overflow se uilizará para mantener el contenido en su contenedor */
+    /* default: 'visible' */
+    /* 'hidden': ocultará el contenido que queda fuera del contenedor */
+    /* 'scroll': ocultará el contenido, pero dejará hacer scroll para visualizarlo */
+    /* 'auto': agregará el scroll solo en el caso que sea necesario */
+    overflow: auto;
+    /* Caso vertical */
+    overflow-y: auto;
+    /* Caso horizontal */
+    overflow-x: auto;
+  }
+  
+  img {
+    /* Valores: 'right', 'left' */
+    float: right;
+  }
+  /* Usualmente usado cuando se pasa el puntero por encima */
+  img:hover {
+    /* Valores: 0 - 1 */
+    /* Transparencia */
+    opacity: 0.50;
+  }
+  
+  /* elemento_padre elemento_hijo */
+  div p{
+    color: #F00;
+  } 

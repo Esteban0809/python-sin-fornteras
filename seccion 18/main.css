@@ -1,0 +1,44 @@
+body {
+    /* Hay colores que se pueden representar con 3 caracteres en hexagesimal */
+    background-color: #eee;
+  }
+  
+  .caja {
+    background-color: #aaf;
+    /* Se le agregaron márgenes, los cuales desplazan el contenido al centro */
+    margin: 8px;
+    /* Margin es el contenivo invisible que bordea por fuera de la caja, en cambio
+    Padding lo hace por dentro */
+    padding: 8px;
+    /* Esta en el medio del margin y el padding */
+    /* border-style: solid; */
+    /* Línea con rayas */
+    /* border-style: dashed; */
+    /* Línea punteada */
+    /* border-style: dotted; */
+    /* Líneas dobles */
+    /* border-style: double; */
+    /* Otros - Distintos efectos*/
+    /* border-style: groove; */
+    /* border-style: ridge; */
+    /* border-style: inset; */
+    /* border-style: outset; */
+    /* border-style: hidden; */
+  
+    /* Combinaciones */
+    /* Superior Derecha Inferior Izquierda */
+    border-style: dotted dashed solid double;
+  
+    /* Ancho del borde */
+    border-width: 8px;
+    /* Color del borde */
+    border-color: #faa;
+    /* Propiedad a un borde en particular */
+    border-top: 6px solid #afa;
+    /* Redondear la caja */
+    border-radius: 8px;
+    /* Altura y ancho de la caja */
+    height: 100px;
+    width: 100px;
+    color: #575;
+  }

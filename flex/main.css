@@ -1,0 +1,44 @@
+body{
+    
+    background-color: green;
+}
+
+.flex { 
+    display: flex;
+    flex-flow: row wrap;
+    
+   
+}
+.red{
+    background: red;
+}
+
+.primero {
+    
+    flex: 1 120px;
+
+}
+
+.segundo {
+    flex-grow: 1;
+    align-self: center;
+
+}
+.tercero {
+    
+    flex-grow: 2;
+    align-self: center;
+
+}
+.cuarto {
+    order: 0;
+
+}
+
+.quinto {
+    order: 0;
+
+}
+.sexto {
+order: 0;
+}

@@ -1,0 +1,21 @@
+body {
+    /* Para los colores se usa el código hexagesimal */
+    /* Color del fondo */
+    background-color: #efefef;
+    /* Color de las letras */
+    /* color: #ff0000; */
+  }
+  
+  /* Para brindar estilo a los elementos del HTML se pueden usar otras opciones */
+  /* ID: Cuando queramos dar un identificador único a un elemento de HTML */
+  /* Class: Cuando queramos hacer una composición de estilos sobre un elemento HTML o 
+  cuando queremos compartir estilo a lo largo de varias etiquetas  */
+  
+  /* Para seleccionar elementos por el ID se usa el # */
+  #parrafo {
+    color: #ff0000;
+  }
+  
+  /* Para seleccionar los elementos por la clase se usa el . */
+  .etiqueta {
+    color: #00aa00;}

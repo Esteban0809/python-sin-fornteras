@@ -1,0 +1,36 @@
+body {
+    background-color: #eee;
+  }
+  
+  .caja_blanca {
+    background-color: #fff;
+    padding: 10px;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 2px;
+    border-top: solid 0px;
+  }
+  
+  #boton_aceptar {
+    border: 0px;
+    padding: 5px;
+    color: #e9e1e1;
+    background-color: #6ebcea;
+  }
+  
+  #boton_cancelar {
+    border: 0px;
+    padding: 5px;
+    color: #e9e1e1;
+    background-color: #f93f3f;
+  }
+  
+  /* Cabe añadir dos puntos:
+  1. El resultado obtenido por mi cuenta fue similar, pero faltaron algunas cosas que lo hubieran mejorado, 
+  luego de ver el video del curso agregue algunos detalles que lo hicieron más fiel a la imagen presentada
+  para realizar el ejercicio.
+  2. Para obtener un resultado más parecido al del curso basta con dividir la cabecera, el contenido y el pie 
+  en tres partes distintas con id's. Sin embargo, yo pensé que no era correcto, primer error, luego de realizar
+  lo mencionado anteriormente es muy sencillo darle la apariencia que se desea sin comprometer otras partes de
+  la caja flotante. */

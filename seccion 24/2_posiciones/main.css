@@ -1,0 +1,42 @@
+body {
+    background-color: #eee;
+  }
+  
+  .grid {
+    /* background-color: red; */
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "content sidebar"
+      "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+  
+    /* Grillas implicitas */
+    grid-auto-rows: 140px;
+    /* 'row' arriba hacia abajo */
+    /* 'column' izquierda a derecha */
+    grid-auto-flow: row;
+  
+    /* Modificar posición de los elementos */
+    /* default: 'start' */
+    /* 'end': envia los items al final del eje (derecha, abajo) */
+    /* 'stretch' estira todos los items para que ocupen todo el ancho disponible */
+    /* Eje vertical */
+    justify-items: start;
+    /* Eje horizontal */
+    align-items: start;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .item-1 {
+    justify-self: center;
+    align-self: center;
+  }

@@ -1,0 +1,40 @@
+body{
+    background-color: antiquewhite;
+}
+p{color:#222fff;
+text-align: justify;
+text-decoration: none;
+text-indent: 50px;
+line-height: 1.7rem;
+word-spacing: 5px;
+text-shadow: 5px 2px 2px rgb(0, 0, 0,0.3);
+font-family:'Times New Roman', Times, serif;
+font-style: oblique;
+font-size: 1.5em;
+font-weight: 500;
+}
+a{
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color:#f00;
+    background-color: #f00;
+    border-color: #d00 solid 1px;
+    padding: 25px;
+    border-radius: 4px;
+
+}
+a:link {
+color: pink;
+text-decoration: none;
+}
+a:visited {
+    color:white;
+}
+a:hover {
+    color:white;
+    background-color: #f55;
+}
+a:active {
+    color: black;
+}
