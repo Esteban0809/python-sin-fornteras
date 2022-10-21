@@ -1,0 +1,36 @@
+body {
+    background-color: #eee;
+}
+
+/* Genérico */
+a {
+    color: hotpink;
+    background-color: #f00;
+}
+
+/* Link */
+a:link {
+  color:pink;
+  text-decoration: none;
+  border: solid 1px #d00;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 4px;
+}
+
+/* Visitado */
+a:visited {
+  color: white;
+}
+
+/* Activo - Click */
+a:active {
+  color: black;
+}
+
+/* Sobre él */
+a:hover {
+  color: white;
+  /* text-decoration: underline; */
+  background-color: #f55;
+}

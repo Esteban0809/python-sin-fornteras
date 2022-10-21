@@ -1,0 +1,61 @@
+body {
+    background-color: #eee;
+  }
+  
+  .fondo {
+    /* Se puede usar los valores de 'height' y 'width' para ajustar el bloque al */
+    /* tamaño de la imagen */
+    height: 900px;
+    width: 900px;
+    /* Colores */
+    background-color: cyan;
+    /* Imágenes */
+    /* La imagen se recortará o repetirá para llenar el espacio del bloque */
+    background-image: url("http://placekitten.com/g/300/300");
+    /* background-repeat */
+    /* 'no-repeat' no dejará que la imagen se repita para ajustarse al tamaño del bloque */
+    /* 'repeat-x' hará que se repita solo en x */
+    /* 'repeat-y' hará que se repita solo en y */
+    background-repeat: no-repeat;
+    /* background-position */
+    /* 'position1 position2 (opcional)'*/
+    /* positions: 'left', 'right', 'top', 'bottom' */
+    background-position: right top;
+    /* background-attachment: Comportamiento de la imagen*/
+    /* 'fixed' se moverá al hacer scroll  */
+    /* 'scroll' (default) se queda en la posición original */
+    background-attachment: fixed;
+    /* background-size: Para que la imagen se adecue al tamaño del bloque */
+    background-size: cover;
+    /* Todo en uno */
+    /* background: cyan url('http://placekitten.com/g/300/300') no-repeat right top fixed; */
+    /* Excepto size */
+    /* background-size: cover; */
+  }
+  
+  .color {
+    /* rgba = red, green, blue, alpha (opacity)  */
+    /* max value: 255 */
+    /* black: rgba(0,0,0,1) */
+    /* white: rgba(0,0,0,1) */
+    /* background-color: rgba(0,0,255,0.2); */
+    /* hsl = hue, saturation, lightness, alpha (opcional)*/
+    background-color: hsl(120, 60%, 70%);
+    /* Afecta al elemento completo, no solo al fondo */
+    opacity: 0.9;
+  }
+  
+  .gradientes {
+    /* direción, color1, color2, ..., color_n*/
+    /* dirección por defecto: to bottom (hacia abajo) */
+    /* 'to left', 'to right', 'to top', 'to bottom' */
+    /* Para realizar diagonales, se esciben dos direcciones */
+    /* También se pueden usar ángulos */
+    background-image: linear-gradient(-45deg, rgba(255, 0, 0, 0.2), tomato);
+    /* direción, color1 alcance1%, color2 alcance2%, ..., color_n alcance_n%*/
+    background-image: repeating-linear-gradient(
+      -15deg,
+      rgba(255, 0, 0, 0.2) 10%,
+      tomato 20%
+    );
+  }

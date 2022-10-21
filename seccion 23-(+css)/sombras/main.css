@@ -1,0 +1,14 @@
+body {
+    background-color: #eee;
+  }
+  
+  .box {
+    /* derecha, abajo, difuminado, color */
+    /* 'inset' sombra por dentro*/
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) /*inset*/;
+  }
+  
+  .text {
+    color: white;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  }

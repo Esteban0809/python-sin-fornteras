@@ -1,0 +1,30 @@
+body {
+    background-color: #eee;
+  }
+  
+  table {
+    width: 100%;
+    background-color: white;
+    /* Elimina los bordes de la tabla */
+    border-collapse: collapse;
+  }
+  
+  /* Intercalar filas según elementos pares o impares: 'even' 'odd' */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }

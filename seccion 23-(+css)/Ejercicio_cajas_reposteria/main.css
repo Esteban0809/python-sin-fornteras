@@ -1,0 +1,42 @@
+body {
+    background-color: #eee;
+  }
+  
+  .box {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    left: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+    transition: 0.4s;
+    /* falto */
+    /* margin: 10px 15px; */
+  }
+  
+  #box1 {
+    border-left: 1px solid rgba(255, 0, 0, 0.8) /*red*/;
+  }
+  
+  #box1:hover {
+    transform: scale(1.05, 1.05);
+  }
+  
+  #box2 {
+    border-left: 1px solid rgba(0, 205, 0, 0.8) /*green*/;
+  }
+  
+  #box2:hover {
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); */
+    /* corrección */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  #box3 {
+    border-left: 1px solid rgba(0, 0, 255, 0.8) /*blue*/;
+  }
+  
+  #box3:hover {
+    background-color: rgba(0, 0, 255, 0.1);
+  }

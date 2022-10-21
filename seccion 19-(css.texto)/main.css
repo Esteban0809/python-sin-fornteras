@@ -1,0 +1,74 @@
+body {
+    background-color: #eee;
+}
+
+p {
+    /* Fuentes */
+    /* Según el sistema operativo reconocerá distintos tipos de fuente */
+    font-family: "Times New Roman";
+    /* Estilo de la fuente */
+    font-style: italic;
+    /* Cursiva */
+    /* font-style: oblique; */
+    /* Tamaño del texto */
+    font-size: 20px;
+    /* Múltiples desarrolladores prefieren usar la unidad de medida para fuentes: em, en lugar de  */
+    /* pixeles. Es útil cuando el usuario modifica el tamaño de la fuenta, ya que crece de manera  */
+    /* proporcional. Por lo general, 1em = 16px, pero puede variar según la configuración del usuario */
+    font-size: 2em;
+    /* Peso de la fuente */
+    font-weight: bold;
+    /* También se puede configurar con números. No todas las fuentes soportan cada tamaño */
+    /* El valor máximo es 900 */
+    font-weight: 500;
+
+    /* Color de la letra */
+    color: #222fff;
+    /* El color también se puede definir con palabras, pero no es muy recomendable.
+     * Debido a que, están demasiado restringidos. */
+    /* color: blueviolet; */
+
+    /* Alineación del texto */
+    text-align: left; 
+    /* La cualidad justify sirve para adecuar el texto al tamaño de su contenedor, osea */
+    /* que el texto llenará por completo una línea. */
+    /* text-align: justify; */
+
+    /* Altura de las lineas */
+    line-height: 2;
+    
+    /* Separación entre las palabras */
+    word-spacing: 10px;
+    
+    /* Sombras al texto */
+    text-shadow: 3px 2px 5px red;
+    /* derecha - abajo - difuminado - color */
+    /* Color RGB */
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    /* Decoración al texto */
+    /* En el caso de la etiqueta a, sirve para quitar el subrayado al link */
+    text-decoration: none;
+    /* Línea arriba del texto */
+    /* text-decoration: overline; */
+    /* Línea que tacha el texto */
+    /* text-decoration: line-through; */
+    /* Línea debajo del texto */
+    /* text-decoration: underline; */
+
+    /* Tranformación del texto */
+    /* Todo a mayúsculas */
+    text-transform: uppercase;
+    /* Todo a minúsculas */
+    /* text-transform: lowercase; */
+    /* Primera con mayúscula */
+    /* text-transform: capitalize; */
+
+    /* Identación de texto */
+    text-indent: 3000px;
+
+    /* Separación entre las letras */
+    letter-spacing:3px;
+}

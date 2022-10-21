@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Mi primera página</title>
+  </head>
+  <body>
+    <!-- Formulario -->
+    <!-- Forma básica para pedir datos al usuario -->
+    <form>
+      <!-- Propiedades -->
+      <!-- Irán luego de la etiqueta, acompañadas del signo igual y el dato entre comillas -->
+      <!-- Fieldset -->
+      <!-- Sirve para agrupar los inputs en una caja -->
+      <fieldset>
+        <!-- Legend -->
+        <!-- Sirve para dar un título al fieldset -->
+        <legend>Datos personales</legend>
+        <!-- Label -->
+        <!-- Entregará una etiqueta a los campos del input -->
+        <label>Edad</label>
+        <!-- Number -->
+        <!-- Solo permite números enteros. Además, agrega unas flechas para aumentar o disminuir el valor -->
+        <!-- Placeholder -->
+        <!-- Nos permitirá mostrar un texto en gris dentro de la caja del input -->
+        <!-- Una vez se escribe sobre el input el texto desaparecerá -->
+        <input type="number" placeholder="Ingresa edad..."/>
+        <br>
+        <label>Contraseña</label>
+        <!-- Password -->
+        <!-- Ocultará todos los datos ingresados y mostrará un símbolo para revelarlos -->
+        <input type="password" />
+        <br>
+        <label>Nombre</label>
+        <!-- Text -->
+        <!-- Por defecto, texto normal -->
+        <input type="text" />
+        <br>
+        <!-- Submit -->
+        <!-- Agrega un botón para enviar los datos -->
+        <!-- Para cambiar el nombre por defecto se utiliza la propiedad value -->
+        <input type="submit" value="Aceptar"/>
+        <!-- Permite la entrada de texto en un cuadrado redimensionable -->
+        <!-- Los atributos más comunes son cols y rows para darle una dimensión por defecto -->
+        <textarea cols="30" rows="10"></textarea>
+        <!-- Un botón al cual le puedes indicar que diga -->
+        <button>Aceptar</button>
+        <!-- Select -->
+        <!-- Sirve para mostrar opciones que se podrán elegir -->
+        <select>
+          <!-- El valor enviado será el de la propiedad value -->
+          <option value="goku">Goku</option>
+          <option value="vegeta">Vegeta</option>
+          <option value="gohan">Gohan</option>
+        </select>
+      </fieldset>
+    </form>
+  </body>
+</html>

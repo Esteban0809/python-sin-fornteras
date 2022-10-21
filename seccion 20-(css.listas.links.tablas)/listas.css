@@ -1,0 +1,27 @@
+body {
+    background-color: #eee;
+  }
+  
+  /* Elemento dentro de un elemento */
+  /* ul li { */
+  /* } */
+  
+  ul {
+    /* Estilos para los items */
+    /* Principales: 'square', 'circle', 'upper-roman', 'lower-alpha' */
+    /* Especiales: 'georgian', 'lower-greek' */
+    list-style-type: none;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding-left: 0px;
+  }
+  
+  li {
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+  }
+  
+  .last_element {
+    border-bottom: none;
+  }

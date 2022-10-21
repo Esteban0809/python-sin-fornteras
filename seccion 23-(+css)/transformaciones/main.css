@@ -1,0 +1,44 @@
+body {
+    background-color: #eee;
+  }
+  
+  .box-2dimensiones {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    /* transform */
+    /* Se debe aplicar a un elemento con display 'block', sino no servir´´á */
+    /* transform: rotate(20deg); */
+    /* transform: translate(50px, 10px); */
+    /* Retorcer */
+    transform: skew(20deg, 10deg);
+    /* transform: skewX(-5deg); */
+    /* transform: skewY(-5deg); */
+  }
+  
+  .box-3dimensiones {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    transform: rotateX(60deg);
+    transform: rotateY(60deg);
+    transform: rotateZ(60deg);
+  }
+  
+  .box-2dimensiones:hover {
+    /* Cambia  el tamaño del elemento */
+    transform: scale(1.2, 1.2);
+    /* Si se usa el scale cuando se ha rotado o trasladado el elemento, entonces
+    el elemento se reescalará en su posición original */
+    /* Especificando el eje: */
+    /* transform: scaleY(1.2); */
+    /* transform: scaleX(1.2); */
+  }
